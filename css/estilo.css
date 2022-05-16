@@ -5,23 +5,32 @@
     
 }
 
-.navbar{
+.derecha{
+    margin: 30%;
+    
+}
+
+/*.navbar{
     display: inline-block;
 }
-
-
-/*table, td, tr{
-    border: 1px solid black;
-    border-collapse: collapse;
-
-}
-
-tr{
-    background-color: rgb(155, 152, 152);
-}
 */
+.table-striped{
+    background-color: rgb(247, 245, 245);
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+}
 
+td, th{
+    border-collapse: collapse;
+    border-right: 1px solid black;
     
 
+}
+
+.table>:not(caption)>*>*{
+    border-bottom-width: 0px;
+}
 
 

@@ -1,14 +1,13 @@
-.justificar, h1{
-    text-align: justify;
-    width: 80%;
+.margen{
     margin: 30px;
     
 }
 
-.derecha{
-    margin: 30%;
-    
+h1, p{
+    text-align: justify;
+    width: 80%;
 }
+
 
 /*.navbar{
     display: inline-block;

@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Clientes</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Mis Datos</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    
 </head>
 <body>
-<!---------Navbar------->
+       <!---------Navbar------->
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="Index_costumer.html">Petshop</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="indexAnonymousUser.html">Inicio</a></li>
+        <li><a href="indexCostumer.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
-        <li class="active"><a href="registro.html">Registrarme</a></li>
+        <li><a href="registro.html">Registrarme</a></li>
         <li><a href="misDatos.html">Mis Datos</a></li>
         <li><a href="misCompras.html">Mis Compras</a></li>
         <li><a href="carritoCompra.html">Carrito de Compras</a></li>
@@ -29,13 +29,12 @@
       </ul>
     </div>
   </nav>
-<!---------End Navbar----------> 
-    <div class="centrar">
-        <button id="mostrar-bordes">Mostrar u ocultar los bordes de las filas de Bootstrap</button>
-    </div>
+<!---------End Navbar---------->   
+ 
+
     <div class="container">
         <div class="row borde-bootstrap-row">
-            <h4>Registro de Clientes</h4>
+            <h4>Mis Datos</h4>
         </div>
         <br>
         <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
@@ -45,9 +44,6 @@
                         <label for="rut">RUT</label>
                         <input class="form-control" type="text" name="rut" id="rut" 
                             aria-describedby="rut-help" placeholder="Ingresa tu RUT">
-                        <small id="rut-help" class="form-text text-muted">
-                            Escribe tu RUT sin puntos y con guión, por ejemplo: 16560241-2
-                        </small>
                     </div>
                     <div class="form-group">
                         <label for="nombres">Nombres</label>
@@ -64,7 +60,7 @@
                         <input class="form-control" type="email" name="correo" id="correo" 
                             aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
                         <small id="correo-help" class="form-text text-muted">
-                            Escribe tu correo incluyendo: nombre, @ y dominio, por ejemplo: atorres@duocuc.cl
+                            
                         </small>
                     </div>
                     <div class="form-group">
@@ -72,7 +68,7 @@
                         <textarea class="form-control" name="direccion" id="direccion" cols="60" rows="5" 
                             aria-describedby="direccion-help"placeholder="Escribe aquí tu dirección"></textarea>
                         <small id="direccion-help" class="form-text text-muted">
-                            Escribe tu direción completa con: calle, número, comuna y región
+                            
                         </small>
                     </div>
                     <div class="form-check">
@@ -102,7 +98,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group">
-                        <img src="img/foto-perfil.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                        <img src="img/foto-perfil.jpg"fotoperfil id="fotoperfil">
                         <br><br>
                         <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
                     </div>

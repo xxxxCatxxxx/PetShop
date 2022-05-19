@@ -4,46 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Datos</title>
+    <title>Mantenedor De Usuarios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
-    
 </head>
 <body>
-       <!---------Navbar------->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="Index_costumer.html">Petshop</a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="Index_costumer.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="registro.html">Registrarme</a></li>
-        <li><a href="mis-datos.html">Mis Datos</a></li>
-        <li><a href="mis-compras.html">Mis Compras</a></li>
-        <li><a href="carrito-compra">Carrito de Compras</a></li>
-        <li><a href="Menú administrador.html">Administrar</a></li>
-        <li><a href="Index_anonymousUser.html">Cerrar Sesión</a></li>
-      </ul>
-    </div>
-  </nav>
-<!---------End Navbar---------->   
- 
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">PetShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Inicio </span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="misDatos.html">Mis Datos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="menuAdministrador.html">Administrar <span class="sr-only">(current)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cerrar sesión</a>
+            </li>
+    </nav>
     <div class="container">
         <div class="row borde-bootstrap-row">
-            <h4>Mis Datos</h4>
+            <h4>Mantenedor De Usuarios</h4>
         </div>
         <br>
-        <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+        <form class="borde-bootstrap-row" action="Mantenedor.php" method="post" name="Mantenedor" id="Mantenedor">
             <div class="row borde-bootstrap-row">
                 <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="Id">Id</label>
+                        <input class="form-control" type="text" name="Id" id="Id" 
+                            aria-describedby="rut-help" placeholder="Ingresa el Id">
+                        <small id="Id-help" class="form-text text-muted">
+                            Escribe el Id por ejemplo: 1542
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="Categoria">Tipo De Usuario</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Administrador</option>
+                        <option>Cliente</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label for="rut">RUT</label>
                         <input class="form-control" type="text" name="rut" id="rut" 
                             aria-describedby="rut-help" placeholder="Ingresa tu RUT">
+                        <small id="rut-help" class="form-text text-muted">
+                            Escribe tu RUT sin puntos y con guión, por ejemplo: 16560241-2
+                        </small>
                     </div>
                     <div class="form-group">
                         <label for="nombres">Nombres</label>
@@ -60,7 +78,6 @@
                         <input class="form-control" type="email" name="correo" id="correo" 
                             aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
                         <small id="correo-help" class="form-text text-muted">
-                            
                         </small>
                     </div>
                     <div class="form-group">
@@ -68,7 +85,6 @@
                         <textarea class="form-control" name="direccion" id="direccion" cols="60" rows="5" 
                             aria-describedby="direccion-help"placeholder="Escribe aquí tu dirección"></textarea>
                         <small id="direccion-help" class="form-text text-muted">
-                            
                         </small>
                     </div>
                     <div class="form-check">
@@ -86,9 +102,10 @@
                         <input class="form-control" type="password" name="password" id="password" 
                             aria-describedby="password-help" placeholder="Escribe aquí tu contraseña">
                         <small id="password-help" class="form-text text-muted">
-                            La contraseña debe tener un mínimo de 10 caracteres y 
-                            debe contener al menos una mayúscula y un número
                         </small>
+                    </div>
+                    <div class="row borde-bootstrap-row">
+                        <button type="submit" class="btn btn-primary">Generar Contrseña</button>
                     </div>
                     <div class="form-group">
                         <label for="password2">Repetir contraseña</label>
@@ -98,7 +115,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group">
-                        <img src="img/foto-perfil.jpg"fotoperfil id="fotoperfil">
+                        <img src="Img/Avatar.jpg" alt="" name="fotoperfil" id="fotoperfil">
                         <br><br>
                         <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
                     </div>
@@ -107,7 +124,53 @@
             <div class="row borde-bootstrap-row">
                 <button type="submit" class="btn btn-primary">Guardar</button>
                 &nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-primary">Nuevo</button>
+                &nbsp;&nbsp;&nbsp;
                 <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+                <div>
+                    <style>
+                        table, td, th {
+                        border: 1px solid;
+                        }
+                        
+                        table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        }
+                        </style>
+                        <table>
+                        <tr>
+                            <th>Id</th>
+                            <th>Tipo Usuario</th>
+                            <th>Rut</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Dirección</th>
+                            <th>Con subscripción</th>
+                            <th>Imagen</th>
+                        </tr>
+                        <tr>
+                            <td>1520</td>
+                            <td>Cliente</td>
+                            <td>10.321.452-k</td>
+                            <td>Rodrigo</td>
+                            <td>Muñoz</td>
+                            <td>Los Angeles</td>
+                            <td>Si</td>
+                            <td>Ingreses Img</td>
+                        </tr>
+                        <tr>
+                            <td>1245</td>
+                            <td>Administrador</td>
+                            <td>15.563.245-4</td>
+                            <td>Alvaro</td>
+                            <td>Martines</td>
+                            <td>Orlando</td>
+                            <td>No</td>
+                            <td>Ingreses Img</td>
+                        </tr>
+                        </table>
             </div>
         </form>
     </div>
@@ -116,8 +179,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <!--Javascript-->
-    <script src="js/validacion-formularios.js"></script>
+    <script src="js/Validador_Usuario.js"></script>
 </body>
 </html>

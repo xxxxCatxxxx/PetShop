@@ -5,33 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantenedor De Usuarios</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">PetShop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Inicio </span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="misDatos.html">Mis Datos</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="menuAdministrador.html">Administrar <span class="sr-only">(current)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Cerrar sesión</a>
-            </li>
-    </nav>
+    <!---------Navbar------->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Petshop</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="indexAdmin.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="misDatos.html">Mis Datos</a></li>
+        <li class="active"><a href="menuAdministrador.html">Administrar</a></li>
+        <li><a href="indexAnonymousUser.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+<!---------End Navbar---------->
     <div class="container">
         <div class="row borde-bootstrap-row">
             <h4>Mantenedor De Usuarios</h4>

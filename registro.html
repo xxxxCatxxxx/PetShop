@@ -15,7 +15,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="Index_costumer.html">Petshop</a>
+        <a class="navbar-brand" href="indexCostumer.html">Petshop</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="indexAnonymousUser.html">Inicio</a></li>
@@ -30,12 +30,9 @@
     </div>
   </nav>
 <!---------End Navbar----------> 
-    <div class="centrar">
-        <button id="mostrar-bordes">Mostrar u ocultar los bordes de las filas de Bootstrap</button>
-    </div>
     <div class="container">
         <div class="row borde-bootstrap-row">
-            <h4>Registro de Clientes</h4>
+            <h4>Registro de Cliente</h4>
         </div>
         <br>
         <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
@@ -45,6 +42,7 @@
                         <label for="rut">RUT</label>
                         <input class="form-control" type="text" name="rut" id="rut" 
                             aria-describedby="rut-help" placeholder="Ingresa tu RUT">
+                            <br>
                         <small id="rut-help" class="form-text text-muted">
                             Escribe tu RUT sin puntos y con guión, por ejemplo: 16560241-2
                         </small>
@@ -63,6 +61,7 @@
                         <label for="correo">Correo</label>
                         <input class="form-control" type="email" name="correo" id="correo" 
                             aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
+                            <br>
                         <small id="correo-help" class="form-text text-muted">
                             Escribe tu correo incluyendo: nombre, @ y dominio, por ejemplo: atorres@duocuc.cl
                         </small>
@@ -71,6 +70,7 @@
                         <label for="direccion">Dirección</label>
                         <textarea class="form-control" name="direccion" id="direccion" cols="60" rows="5" 
                             aria-describedby="direccion-help"placeholder="Escribe aquí tu dirección"></textarea>
+                            <br>
                         <small id="direccion-help" class="form-text text-muted">
                             Escribe tu direción completa con: calle, número, comuna y región
                         </small>
@@ -89,6 +89,7 @@
                         <label for="password">Contraseña</label>
                         <input class="form-control" type="password" name="password" id="password" 
                             aria-describedby="password-help" placeholder="Escribe aquí tu contraseña">
+                            <br>
                         <small id="password-help" class="form-text text-muted">
                             La contraseña debe tener un mínimo de 10 caracteres y 
                             debe contener al menos una mayúscula y un número
